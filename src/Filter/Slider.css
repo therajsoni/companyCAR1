@@ -1,0 +1,52 @@
+/* Slider container */
+.slider-container {
+  width: 100%;
+  position: relative; /* Relative positioning for label alignment */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels under the slider */
+.slider-labels {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Adds space between labels and slider */
+}
+
+.slider-label {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 12px;
+  top: 20px;
+}
+
+/* Slider */
+.slider {
+  height: 20px;
+}
+
+/* Track styling */
+.track {
+  background: black;
+  height: 5px;
+  border-radius: 5px;
+}
+
+/* Thumb styling */
+.thumb {
+  box-sizing: content-box;
+  height: 19px;
+  width: 19px;
+  background: black;
+  border: 2px solid blue;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -9px;
+}
+
+/* Thumb hover effect */
+.thumb:hover {
+  background: black;
+}
